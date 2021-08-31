@@ -1,0 +1,397 @@
+/* reglas
+selectores: identificar 1 o mas elementos con alguna propiedad
+propiedades 
+valores */
+
+
+/* header{
+    background: rgba(108, 113, 116, 0.521);
+} */
+
+/* selector de etiqueta  header-section-article-nav */
+
+/* selector descendente ejemplo: body header div nav ol li a {
+
+} */
+
+/*selector de clase: es un atributo se hace con un punto . */
+
+/*selector de id #*/
+/*#portfolio*/
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+}
+
+
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: "Fjalla One", sans-serif;
+    font-weight: normal;
+}   
+
+h1{
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+    /* margin: 100px 400px 70px 30px; */
+    color: white;
+    margin: 0;
+
+    /* margin: top right bottom left; */
+    /*text-transform: capitalize;
+    text-decoration: dashed;*/
+}
+
+h1 strong{
+    color: #026fff;
+}
+
+h2{
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.exp {
+    width: 500px;
+}
+
+.exp-title{
+    margin: 20px;
+}
+
+
+.use{
+    /* border: tamaño estilo color; */
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px; 
+    margin-bottom: 15px;
+    background: white;
+    box-sizing: border-box;/* mantiene el modelo de caja constante */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.use-imageContainer{
+    width: 300px;
+
+}
+
+.hero{
+    height: 300px;
+/*     background-image: url("../yo.PNG");
+ */ /*    background-color: #1b2127; */
+       background: linear-gradient(#424350, #051e53, rgb(209, 209, 209));
+
+/*     background-size: 300px 300px; /* da el tamaño */
+/*     background-repeat: no-repeat;/* evita que se repita */
+/*     background-position-x: right;/* mueve la imagen segun el eje */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-image{
+    object-fit: cover;
+    
+}
+
+.header{
+      background-color: #1b2127;
+
+     color: white;/* color del texto */
+     display: flex;
+     justify-content: space-between;
+     height: 90px;
+     align-items: center;
+}
+
+.menu{
+    height: inherit;
+}
+
+.header ol{
+    display: flex;
+    height: inherit;
+}
+
+.header ol li{
+    height: inherit;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+/* .logo{
+    width: 95%;
+    height: 300px;
+    background-image: url('../subestacion5.jpg'); 
+     background-image: url('../logo.png');
+ background-size: 100% 100%;
+    background-repeat: no-repeat;
+ } */
+
+ figure{
+     margin: 0;
+ }
+/* flex-wrap: wrap  hace que los elementos bajen de linea
+flex-direction: column cambia segun fila o columna 
+justfy-content: justifica el contenido dependiendo de donde se quiera comenzar
+aling-items:flex-end alinea los items y los centra
+flex-direction:column pasa de fila a columna o alrevez*/
+
+.footer{
+    color: white;
+    background-color: #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.footer img{
+   vertical-align: middle;
+ } 
+
+ .footer a{
+     color: white;
+ }
+
+ .use-description{
+     font-size:25px;
+     margin: 10px;
+     margin-bottom: 10px; 
+ }
+
+ .use-date{
+     margin: 20px;
+     font-size: 22px;
+ }
+
+ .use-url{
+    margin: 10px;
+    font-size: 15px;
+}
+
+.use strong{
+    font-family: "Fjalla One", sans-serif;
+  
+}
+
+.project{
+    margin: 10px;
+    width: 480px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: #f4fbff;
+
+}
+
+
+
+.project-details{
+    margin: 20px 40px;
+    background-color: white;
+    margin-top: -30px;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+ }
+
+.portfolio{
+    background: #fafafa;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+   }
+
+.portfolio img{
+width: 480px;
+height: 250px;
+object-fit: cover;
+}
+
+.project-description{
+    text-align: left;
+}
+
+
+.project-list-title{
+ margin-left: 20px;   
+}
+
+.tools{
+    margin: 20px;
+}
+
+
+.contact{
+ background-color: #056fff;
+ color: white;
+ height: 150px;   
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    background-image: url("../subestacion.jpg");
+    margin: 0 10px;
+}
+
+.social-link.facebook{
+    background-image: url("../facebook.png");
+
+}
+
+.social-link.instagram{
+    background-image: url("../instagram.png");
+}
+
+.social-link.github{
+    background-image: url("../github.png");
+}
+
+.email input{
+    border-color: gray;
+    padding: 10px 20px 5px 25px;
+    background-image: url("../mail.png") ;
+    background-size: 18px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.email button{
+    border-color: white;
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.email h3{
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+
+.container{
+/*     border: 1px solid red;
+ */    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+.experience{
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+progress[value] {
+    /* Elimino la apariencia por defecto */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+     
+    /* Quito el borde que aparece en Firefox */
+    border: none;
+ 
+    /* Añado mis propios estilos */
+    width: 270px;
+    height: 30px;
+    overflow:hidden;
+     
+/*  Estos estilos solo se aplicaran al fondo de la barra en mozilla */
+/*         border:1px inset #666;
+ */    background-color:#D8D8D8;
+    border-radius : 20px ;
+}
+
+
+
+ progress::-webkit-progress-value {
+    background: rgb(31, 163, 163);
+    border-radius : 20px;  
+} 
+  
+progress::-webkit-progress-bar {
+    background-color:#D8D8D8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; /*esta sombra es para simular el borde que he aplicado arriba para Mozilla*/
+    border-radius : 20px ;         
+} 
+
+.center{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* flex-wrap: wrap  hace que los elementos bajen de linea
+flex-direction: column cambia segun fila o columna 
+justfy-content: justifica el contenido dependiendo de donde se quiera comenzar
+aling-items:flex-end alinea los items y los centra
+flex-direction:column pasa de fila a columna o alrevez* */

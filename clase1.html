@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="icon" type="image/png" href="../portafolio/images/trafo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="animateprogress.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+                <figure class="logo">                   
+                    <img src="../portafolio/images/logo3.png" alt="logo Portfolio" height="150px">  
+                </figure>
+            <nav class="menu">
+                <ol>
+                    <li>
+                        <a class="link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#experience">Experience</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#contacto">Let's work together</a>
+                    </li>
+                
+                </ol>
+            </nav>
+
+        </div>
+            
+        
+    </header>
+    
+    <section class="hero">
+     <div class="container">
+        <h1>
+            Hi, I'm  <strong>Carlos Andrés Ortíz Mejía</strong>  <br> <strong>Electronic</strong>  and <strong>Electrical</strong> engineer
+        </h1>
+        <img class="hero-image" src="../portafolio/images/yo.PNG" alt="me" width="250">
+
+     </div>   
+     
+     </section>
+<div class="container">
+    <h2 class="project-list-title">Portfolio (Projects)</h2>
+
+</div>
+    <section id="portfolio" class="portfolio">
+        
+        <div class="container">
+            <article class="project">
+                <figure>
+                    <img src="../portafolio/images/subestacion.jpg" alt="subestacion">
+                </figure> 
+                <div class="project-details">
+                  
+                    <h3 class="project-title">Primary engineering</h3>
+                    <p class="project-description">Design of medium and high voltage substations</p>
+                </div>
+            </article>
+
+            <article class="project">
+                <figure>
+                    <img src="../portafolio/images/tablero3.jpg" alt="">
+                </figure>
+                <div class="project-details">
+                    
+                    <h3 class="project-title">Secundary engineering</h3>
+                    <p class="project-description">Design of medium and high voltage substations</p>
+                </div>
+            </article>
+    
+        </div>     
+      
+
+        
+        
+    </section>
+
+    <section class="tools">
+        <div class="container">
+            <h2>Software tools</h2>
+        </div>
+              
+        
+
+        <!-- ------------------------------barras de experiencia-------------------------- -->
+
+
+        <div class="center">
+            <div>
+                <div class="progress">
+                <p>Autocad Electrical</p>
+                    <progress id="Autocad_Electrical" max="100" value="90"></progress>
+                    <span></span>
+                </div>
+                
+                <div class="progress">
+                <p>Elcad</p>
+                    <progress id="Elcad" max="100" value="50"></progress>
+                    <span></span>
+                </div>
+                
+                <div class="clear"></div>
+                <div class="progress">
+                <p>Excel</p>
+                    <progress id="Excel" max="100" value="80"></progress>
+                    <span></span>
+                </div>
+            
+            </div> 
+            
+            <div>
+                <div class="progress">
+                <p>CymeGround</p>
+                    <progress id="CymeGround" max="100" value="52"></progress>
+                    <span></span>
+                </div>
+                <div class="clear"></div>
+                    
+                <div class="progress">
+                <p>Dialux</p>
+                    <progress id="Dialux" max="100" value="60"></progress>
+                    <span></span>
+                </div>
+                
+                <div class="progress">
+                <p>JavaScript</p>
+                    <progress id="JavaScript" max="100" value="50"></progress>
+                    <span></span>
+                </div>
+                    
+                <input type="button" id="boton" value="Reload" />
+            </div>
+        </div>
+    
+        <script type="text/javascript"> 
+        
+            window.onload = function() { 
+                
+                animateprogress("#Autocad_Electrical",90);
+                animateprogress("#Elcad",50);
+                animateprogress("#Excel",80);
+                animateprogress("#CymeGround",60);
+                animateprogress("#Dialux",60);
+                animateprogress("#JavaScript",50);
+                
+            } 	
+            document.querySelector ("#boton").addEventListener ("click", function() { 
+                animateprogress("#Autocad_Electrical",90);
+                animateprogress("#Elcad",50);
+                animateprogress("#Excel",80);
+                animateprogress("#CymeGround",60);
+                animateprogress("#Dialux",60);
+                animateprogress("#JavaScript",50);
+        
+            });
+            
+        </script>
+
+     <!--  ----------------------------final barras experiencia------------------------------------- -->
+
+
+
+       
+
+    </section>
+   
+
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="exp-title">Experience</h2>
+
+        </div>
+        
+        <div class="container">
+            <article class="use">
+                <div class="exp">                     
+                    <p class="use-description">Auxiliary engineer in engineering projects, development of calculation <br> memories and plans for medium and high voltage substations.</p>
+                    <h3 class="use-date"><small><strong>Date:</strong> from 08/06/2016 to 14/09/2017</small></h3>
+                    <a class="use-url" href="./documentation/index.html">See documentation</a>
+                </div>
+                <figure class="use-imageContainer">
+                    <img class="use-image" src="../portafolio/images/ingema.jpg" alt="ingema" width="250">
+                </figure>
+            
+            </article>
+    
+            <article class="use">
+                <div class="exp">
+                                  <p class="use-description">Control and protection engineer, design of schematic diagrams for <br> control and protection boards for high voltage substations.</p>
+                    <h3 class="use-date"><small><strong>Date:</strong> from 08/06/2016 to 14/09/2017</small></h3>
+                    <a class="use-url" href="./documentation/index.html">See documentation</a>
+                </div>
+                <figure class="use-imageContainer">
+                    <img class="use2-image" src="../portafolio/images/hmv.jpg" alt="hmv" width="200">
+                </figure>
+            </article>
+           
+        </div>   
+       
+    </section>
+
+    <section id="contacto" class="contact">
+
+    <div class="container">
+        <form action="/suscripcion/" class="email">
+            <h3>Let's work together</h3>
+            <input type="text" placeholder="leave me your email" id="email">
+            <button>Send</button>
+        </form>
+
+        <div class="social">
+            <a href="https://www.facebook.com/carlos.a.ortiz.948" class="social-link facebook"></a>
+            <a href="https://github.com/carlospianoforte" class="social-link github"></a>
+            <a href="https://www.instagram.com/carlospianoforte" class="social-link instagram"></a>
+           
+        </div>
+    </div>        
+        
+
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+        <div>
+            <p>CV Carlos Andres Ortíz Mejía   <br><small>Bolivarian Pontifical University graduate</small></p>
+        </div> 
+
+         <div> 
+            <img src="../portafolio/images/upb4.png" alt="logoUPB" width="130px"></div>
+            <p>Designed by <a href="https://www.facebook.com/carlos.a.ortiz.948">@carlospianoforte</a></p>
+        </div> 
+    </div>
+
+</footer>
+
+
+</body>
+</html>
